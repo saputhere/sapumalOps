@@ -83,69 +83,8 @@
     <div class="wrap">
       <span class="eyebrow reveal">Selected work</span>
       <h2 class="reveal">Projects</h2>
-      <div class="projects">
-        <article class="card feature reveal">
-          <div class="cat">Developer tool · Browser-based</div>
-          <h3>Image to Base64 Converter</h3>
-          <p>A lightweight HTML web application that converts images to Base64 entirely in the browser, with no uploads, no backend and no external services required.</p>
-          <div class="tags"><span class="tag">HTML5</span><span class="tag">JavaScript</span><span class="tag">Developer tools</span></div>
-          <a class="card-link" href="https://github.com/saputhere/base64covertor" target="_blank" rel="noopener">View on GitHub →</a>
-        </article>
-        <article class="card reveal">
-          <div class="cat">API · Printing</div>
-          <h3>Printfactory API Printing Solution</h3>
-          <p>An API-driven printing solution that connects business systems to print workflows.</p>
-          <div class="tags"><span class="tag">REST APIs</span><span class="tag">C# / .NET</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">Microsoft · SharePoint</div>
-          <h3>SharePoint Migration Tool</h3>
-          <p>A tool for moving content and data into SharePoint as part of a structured migration.</p>
-          <div class="tags"><span class="tag">SharePoint</span><span class="tag">Power Automate</span><span class="tag">Azure</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">Enterprise · ERP</div>
-          <h3>Cascada ERP Solution</h3>
-          <p>An enterprise resource planning solution built to organise core business operations in one system.</p>
-          <div class="tags"><span class="tag">C# / .NET</span><span class="tag">SQL Server</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">Retail · Point of Sale</div>
-          <h3>POS System</h3>
-          <p>A point-of-sale system for handling sales transactions and day-to-day store operations.</p>
-          <div class="tags"><span class="tag">API</span><span class="tag">SQL Server</span><span class="tag">C# / .NET</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">Power Apps · Workflow</div>
-          <h3>Shopflow System · RMW to FGW</h3>
-          <p>A Power Apps solution for the RMW to FGW process within the Shopflow system.</p>
-          <div class="tags"><span class="tag">Power Apps</span><span class="tag">Power Automate</span><span class="tag">SharePoint</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">Power Platform · SharePoint</div>
-          <h3>Digital Workflow Automation Suite</h3>
-          <p>End-to-end approval and reporting flows built on Power Apps, Power Automate and SharePoint, replacing manual paperwork across a multi-site manufacturing operation.</p>
-          <div class="tags"><span class="tag">Power Apps</span><span class="tag">Power Automate</span><span class="tag">Power BI</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">C# · .NET · Security</div>
-          <h3>SecureNet Client Portal</h3>
-          <p>A role-based client portal hardened against common attack vectors, with audit logging and two-factor authentication built in from the first commit.</p>
-          <div class="tags"><span class="tag">C# / .NET</span><span class="tag">SQL Server</span><span class="tag">JWT Auth</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">PHP · JavaScript</div>
-          <h3>MediaCore CMS</h3>
-          <p>A lightweight content management system built for a broadcast media house, handling scheduling, versioned articles and a custom media library.</p>
-          <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Vanilla JS</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="cat">Power BI · Fabric</div>
-          <h3>Insight Dashboard</h3>
-          <p>A live analytics dashboard consolidating production, quality and workforce data into a single view for plant-level decisions.</p>
-          <div class="tags"><span class="tag">Power BI</span><span class="tag">Fabric</span><span class="tag">DAX</span></div>
-        </article>
-      </div>
+      <!-- Project cards are rendered from js/projects.js -->
+      <div class="projects" id="projectGrid"></div>
     </div>
   </section>
 
@@ -285,6 +224,8 @@
 
   <footer>© 2026 Sapumal Wijesinghe · Innovator</footer>
 
+  <!-- projects.js must load before main.js so the cards exist when main.js attaches its effects -->
+  <script src="js/projects.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
